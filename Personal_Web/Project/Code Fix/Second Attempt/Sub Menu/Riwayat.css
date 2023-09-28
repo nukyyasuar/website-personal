@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Poppins;
+}
+
+.w-10sen {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 135%;
+}
+.nav-item{
+    font-size: 14px;
+}
+#ds:hover{
+    background-color: #6A826A;
+    border-radius: 15px;
+}
+#acc:hover{
+    background-color: #3D2B22;
+    border-radius: 15px;
+}
+
+/* .masthead {
+    height: 110vh;
+    background-image: url('./Assets/');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+/* .container-fluid{
+    padding: 0 !important;
+} */
+#svg{
+    float: left;
+    margin-top: -10px;
+}
+#riwayat{
+    margin-left: 10px;
+}
+#tp{
+    margin-right: 650px;
+}
+/* #ds{
+    background-color: #84D2C5;
+    color: white;
+} */
+#log{
+    background-color: #E4C988;
+    color: white;
+}
+
+/* .img-fluid{
+    margin-top: -50px;
+} */
+
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top{
+    margin-top: -30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.middle{
+    padding-top: 20px;
+    padding-left: 205px;
+    padding-right: 210px;
+    background-size: cover;
+    background-color: #C27765;
+}
+
+.bottom{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-home {
+    border-radius: 15px;
+    background-color: #D9C7A6;
+}
+
+.pengiriman {
+    background-color: #84D2C5;
+    border-radius: 12px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+
+.disalurkan {
+    background-color: #6A826A;
+    border-radius: 12px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.pengambilan {
+    background-color: #E4C988;
+    border-radius: 12px;
+    color: white;
+    padding: 5px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.dibatalkan {
+    background-color: #A94646;
+    border-radius: 12px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.col{
+    font-size: 10px;
+}
+
