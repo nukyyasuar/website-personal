@@ -1,0 +1,126 @@
+a {
+    text-decoration: none;
+}
+
+
+.logoPenampung {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 135%;
+}
+
+.profilePenampung {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 125%;
+}
+
+.nav-item {
+    font-size: 14px;
+}
+
+#ds:hover {
+    background-color: #6A826A;
+    border-radius: 15px;
+}
+
+#acc:hover {
+    background-color: #3D2B22;
+    border-radius: 15px;
+}
+
+.PenamCardProf {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 135%;
+}
+
+.card-img-top2 {
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.card2 {
+    margin-left: 20px;
+    border-radius: 20px;
+    background-color: #EEEEEE;
+}
+
+.body2 {
+    margin-top: -25px;
+    margin-left: 5px;
+}
+
+.titleCard {
+    margin-top: 20px;
+    margin-left: 130px;
+}
+
+.col2-mainText {
+    margin-left: 550px;
+    margin-top: -428px;
+}
+
+.card-img-top {
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.card-body {
+    margin-top: -25px;
+    margin-left: 5px;
+}
+
+.namaTempatPenampung,
+.alamatTempatPenampung {
+    flex-direction: row;
+}
+
+.card-home {
+    border-radius: 15px;
+    background-color: #D9C7A6;
+}
+
+.pengiriman {
+    background-color: #84D2C5;
+    border-radius: 12px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+
+.disalurkan {
+    background-color: #6A826A;
+    border-radius: 12px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.pengambilan {
+    background-color: #E4C988;
+    border-radius: 12px;
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.dibatalkan {
+    background-color: #A94646;
+    border-radius: 12px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.footer {
+    padding: 10px 50px;
+}

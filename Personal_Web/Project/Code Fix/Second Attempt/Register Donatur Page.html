@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="Register Donatur Page style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow sticky-top mb-5" style="background-color: white;">
+        <div class="container-fluid">
+            <a href="Home Unsign.html" class="me-4" style="width: 100px;">
+                <img src="./Screenshot 2023-05-10 095045.png" alt="Logo beri barang" class="w-10sen">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="font-family: Poppins;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Login Donatur Page.html">Riwayat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Sub Menu/cerita-kami.html">Cerita Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Sub Menu/tempat-penampung.html">Tempat Penampung</a>
+                    </li>
+                    <div class="d-flex" style="margin-left: 770px;">
+                        <li class="nav-item me-1 rounded-4" style="background-color: #84D2C5;">
+                            <a id="acc2" class="nav-link text-light fw-bold" href="Login Donatur Page.html">Donasi Sekarang</a>
+                        </li>
+                        <li class="nav-item me-1 rounded-4" style="background-color: #E4C988;">
+                            <a id="acc" class="nav-link text-light fw-bold" href="Login Page.html">Masuk</a>
+                        </li>
+                        <li class="nav-item me-1 rounded-4" style="background-color: #E4C988;">
+                            <a id="acc" class="nav-link text-light fw-bold" href="Register Page.html">Daftar</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <div class="d-flex" style="margin-top: -47px;">
+        <div>
+            <img src="Assets/Donatur banner 2.png" class="" style="width: 950px; height: 900px;" alt="">
+        </div>
+
+        <div class="d-flex flex-column justify-content-center text-center" style="margin-left: 100px;">
+            <p class = "text-daftar-1">Daftar</p>
+            <p class = "text-daftar-2 mb-5">DONATUR</p>
+            
+            <div class="fw-bold">
+                <div class="mb-3">
+                    <label for="exampleFullName" class="form-label">Nama Lengkap</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="width: 400px;">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleNickname" class="form-label">Nama Panggilan</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="examplePhoneNumber" class="form-label">Nomor Telepon (Whatsapp)</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Kata Kunci</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-5 form-check w-75">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Notifikasi jika ada berita</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-outline-dark">
+                <a href="Login Donatur Page.html" class="text-white" style="text-decoration: none;">Submit</a>
+            </button>
+        </div>
+    </div>
+    
+</body>
+</html>

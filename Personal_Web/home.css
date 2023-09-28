@@ -1,0 +1,19 @@
+#navbar a{
+    color: white;
+}
+.background{
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 40%;
+    overflow-y: scroll;
+}
+#logocontact img{
+    margin-right: 20px;
+    width: 40px;
+}
+#logocontact img:hover{
+    filter: brightness(200%) contrast(200%);
+}

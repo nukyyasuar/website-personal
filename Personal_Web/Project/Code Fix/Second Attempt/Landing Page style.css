@@ -1,0 +1,13 @@
+html, body{
+    height: 100%;
+}
+
+#logo-container{
+    display: flex;   
+    align-items: center;
+    height: 100%;
+}
+#svg-landing{
+    margin: auto;
+    display: flex;
+}

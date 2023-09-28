@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./Donasi 3.css">
+    <link href="https://fonts.cdnfonts.com/css/nexa-bold" rel="stylesheet">
+    <style>@import url('https://fonts.cdnfonts.com/css/nexa-bold');</style>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css" rel="stylesheet"/> -->
+  </head>
+  
+  <body>
+     <!-- NAVBAR -->
+     <nav class="navbar navbar-expand-lg navbar-light shadow sticky-top" style="background-color: white;">
+        <div class="container-fluid">
+            <a href="Home Sign.html" class="me-4" style="width: 100px;">
+                <img src="Screenshot 2023-05-10 095045.png" alt="Logo beri barang" class="w-10sen">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="font-family: Poppins;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Sub Menu/Riwayat.html">Riwayat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Sub Menu/cerita-kami (Login).html">Cerita Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Sub Menu/tempat-penampung (Login).html">Tempat Penampung</a>
+                    </li>
+                    <div class="d-flex" style="margin-left: 840px;">
+                        <li class="nav-item me-1 rounded-4" style="background-color: #84D2C5;">
+                            <a id="ds" class="nav-link text-light fw-bold" href="Donasi.html">Donasi Sekarang</a>
+                        </li>
+                        <li>
+                            <a href="Profile.html" class="btn p-0">
+                                <img src="Sub Menu/img/icon-user.svg" alt="Icon User" class="p-0" style="width: 65%;"/>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <div class="d-flex flex-column align-items-center">
+            <p class="mt-5 h1 fw-bold mb-4">Yuk Donasikan Barangmu</p>
+            <p class="lh-1 h5">Jumlah Jenis Barang</p>
+        </div>
+        <div class="d-flex justify-content-center">
+            <a href="Donasi 2.html" class="">
+                <svg class="me-2" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="ment" cx="13" cy="13" r="13" fill="#C6CBDA"/>
+                    <path d="M17.808 11.872V15.28H7.248V11.872H17.808Z" fill="white"/>
+                </svg>
+            </a>
+            <p class="h5 me-2 fw-bold" style="margin-top: 1px; color: #E4C988;">3</p>
+            <a href="Donasi 4.html">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="ment" cx="13" cy="13" r="13" fill="#C6CBDA"/>
+                    <path d="M19.087 14.721H15.085V18.815H11.359V14.721H7.357V11.202H11.359V7.085H15.085V11.202H19.087V14.721Z" fill="white"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div>
+        <div class="container-fluid px-1 mx-auto">
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 col-11">
+                    <div class="card" style="border-radius: 20px;">
+                        
+                        <form class="form-card" onsubmit="event.preventDefault()">
+                            <div class="row justify-content-between text-left">
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label for="">
+                                        Jenis Barang 
+                                        <span class="text-danger">*</span> 
+                                    </label>
+                                    <div class="col-md-12 mt-1">
+                                        <select class="form-select" required>
+                                              <option selected disabled value="label" class="">Pilih jenis barangmu</option>
+                                              <option value="furnitur">Furnitur</option>
+                                              <option value="pakaian">Pakaian</option>
+                                              <option value="mamin">Makanan / Minuman</option>
+                                              <option value="butul">Buku / Alat Tulis</option>
+                                       </select>
+                                   </div>
+                                </div>
+
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label for="">
+                                        Tempat Penampung
+                                        <span class="text-danger">*</span> 
+                                    </label> 
+                                    <div class="col-md-12 mt-1">
+                                        <select class="form-select" required>
+                                              <option selected disabled value="label" class="">Pilih tempat penampung yang dituju</option>
+                                              <option value="tp1">Tempat Penampung Donasi 1</option>
+                                              <option value="tp2">Tempat Penampung Donasi 2</option>
+                                              <option value="tp3">Tempat Penampung Donasi 3</option>
+                                              <option value="tp4">Tempat Penampung Donasi 4</option>
+                                       </select>
+                                   </div>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-between text-left mt-3">
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label for="">
+                                        Foto Barang
+                                        <span class="text-danger">*</span> 
+                                    </label>
+                                    <div class="col-md-12 mt-1">
+                                        <input class="form-control fs-6" type="file" id="formFile">
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label for="">
+                                        Tempat Disalurkan
+                                        <span class="text-danger">*</span> 
+                                    </label> 
+                                    <div class="col-md-12 mt-1">
+                                        <select class="form-select" required>
+                                              <option selected disabled value="label" class="">Ingin disalurkan kemana barangmu?</option>
+                                              <option value="td1">Tempat Penyaluran Donasi 1</option>
+                                              <option value="td2">Tempat Penyaluran Donasi 2</option>
+                                              <option value="td3">Tempat Penyaluran Donasi 3</option>
+                                              <option value="tdp">Mengikuti penyaluran tempat penampung</option>
+                                       </select>
+                                   </div>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-between text-left mt-3">
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label for="">
+                                        Alamat Pengambilan
+                                        <span class="text-danger">*</span> 
+                                    </label>
+                                    <div class="col-md-12 mt-1">
+                                        <textarea class="form-control fs-6" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-sm-6 d-flex">
+                                    <label for="">
+                                        Apakah barang ingin kami jemput?
+                                        <span class="text-danger me-2">*</span> 
+                                    </label>
+
+                                    <div class="me-2">
+                                        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                                        <label class="btn btn-outline-secondary" for="option1">Ya</label><br>
+                                    </div>
+                                    <div>
+                                        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="option2">Tidak</label><br>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card" style="border-radius: 20px;">
+                        
+                        <form class="form-card" onsubmit="event.preventDefault()">
+                            <div class="row justify-content-between text-left">
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label for="">
+                                        Jenis Barang 
+                                        <span class="text-danger">*</span> 
+                                    </label>
+                                    <div class="col-md-12 mt-1">
+                                        <select class="form-select" required>
+                                              <option selected disabled value="label" class="">Pilih jenis barangmu</option>
+                                              <option value="furnitur">Furnitur</option>
+                                              <option value="pakaian">Pakaian</option>
+                                              <option value="mamin">Makanan / Minuman</option>
+                                              <option value="butul">Buku / Alat Tulis</option>
+                                       </select>
+                                   </div>
+                                </div>
+
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label for="">
+                                        Tempat Penampung
+                                        <span class="text-danger">*</span> 
+                                    </label> 
+                                    <div class="col-md-12 mt-1">
+                                        <select class="form-select" required>
+                                              <option selected disabled value="label" class="">Pilih tempat penampung yang dituju</option>
+                                              <option value="tp1">Tempat Penampung Donasi 1</option>
+                                              <option value="tp2">Tempat Penampung Donasi 2</option>
+                                              <option value="tp3">Tempat Penampung Donasi 3</option>
+                                              <option value="tp4">Tempat Penampung Donasi 4</option>
+                                       </select>
+                                   </div>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-between text-left mt-3">
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label for="">
+                                        Foto Barang
+                                        <span class="text-danger">*</span> 
+                                    </label>
+                                    <div class="col-md-12 mt-1">
+                                        <input class="form-control fs-6" type="file" id="formFile">
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label for="">
+                                        Tempat Disalurkan
+                                        <span class="text-danger">*</span> 
+                                    </label> 
+                                    <div class="col-md-12 mt-1">
+                                        <select class="form-select" required>
+                                              <option selected disabled value="label" class="">Ingin disalurkan kemana barangmu?</option>
+                                              <option value="td1">Tempat Penyaluran Donasi 1</option>
+                                              <option value="td2">Tempat Penyaluran Donasi 2</option>
+                                              <option value="td3">Tempat Penyaluran Donasi 3</option>
+                                              <option value="tdp">Mengikuti penyaluran tempat penampung</option>
+                                       </select>
+                                   </div>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-between text-left mt-3">
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label for="">
+                                        Alamat Pengambilan
+                                        <span class="text-danger">*</span> 
+                                    </label>
+                                    <div class="col-md-12 mt-1">
+                                        <textarea class="form-control fs-6" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-sm-6 d-flex">
+                                    <label for="">
+                                        Apakah barang ingin kami jemput?
+                                        <span class="text-danger me-2">*</span> 
+                                    </label>
+
+                                    <div class="me-2">
+                                        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                                        <label class="btn btn-outline-secondary" for="option1">Ya</label><br>
+                                    </div>
+                                    <div>
+                                        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="option2">Tidak</label><br>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card" style="border-radius: 20px;">
+                        
+                        <form class="form-card" onsubmit="event.preventDefault()">
+                            <div class="row justify-content-between text-left">
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label for="">
+                                        Jenis Barang 
+                                        <span class="text-danger">*</span> 
+                                    </label>
+                                    <div class="col-md-12 mt-1">
+                                        <select class="form-select" required>
+                                              <option selected disabled value="label" class="">Pilih jenis barangmu</option>
+                                              <option value="furnitur">Furnitur</option>
+                                              <option value="pakaian">Pakaian</option>
+                                              <option value="mamin">Makanan / Minuman</option>
+                                              <option value="butul">Buku / Alat Tulis</option>
+                                       </select>
+                                   </div>
+                                </div>
+
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label for="">
+                                        Tempat Penampung
+                                        <span class="text-danger">*</span> 
+                                    </label> 
+                                    <div class="col-md-12 mt-1">
+                                        <select class="form-select" required>
+                                              <option selected disabled value="label" class="">Pilih tempat penampung yang dituju</option>
+                                              <option value="tp1">Tempat Penampung Donasi 1</option>
+                                              <option value="tp2">Tempat Penampung Donasi 2</option>
+                                              <option value="tp3">Tempat Penampung Donasi 3</option>
+                                              <option value="tp4">Tempat Penampung Donasi 4</option>
+                                       </select>
+                                   </div>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-between text-left mt-3">
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label for="">
+                                        Foto Barang
+                                        <span class="text-danger">*</span> 
+                                    </label>
+                                    <div class="col-md-12 mt-1">
+                                        <input class="form-control fs-6" type="file" id="formFile">
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label for="">
+                                        Tempat Disalurkan
+                                        <span class="text-danger">*</span> 
+                                    </label> 
+                                    <div class="col-md-12 mt-1">
+                                        <select class="form-select" required>
+                                              <option selected disabled value="label" class="">Ingin disalurkan kemana barangmu?</option>
+                                              <option value="td1">Tempat Penyaluran Donasi 1</option>
+                                              <option value="td2">Tempat Penyaluran Donasi 2</option>
+                                              <option value="td3">Tempat Penyaluran Donasi 3</option>
+                                              <option value="tdp">Mengikuti penyaluran tempat penampung</option>
+                                       </select>
+                                   </div>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-between text-left mt-3">
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label for="">
+                                        Alamat Pengambilan
+                                        <span class="text-danger">*</span> 
+                                    </label>
+                                    <div class="col-md-12 mt-1">
+                                        <textarea class="form-control fs-6" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-sm-6 d-flex">
+                                    <label for="">
+                                        Apakah barang ingin kami jemput?
+                                        <span class="text-danger me-2">*</span> 
+                                    </label>
+
+                                    <div class="me-2">
+                                        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                                        <label class="btn btn-outline-secondary" for="option1">Ya</label><br>
+                                    </div>
+                                    <div>
+                                        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="option2">Tidak</label><br>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="d-grid gap-2 d-flex justify-content-center">
+            <button class="btn fw-bold fs-5" type="button" style="width: 20%; background-color: #E4C988; color: white; margin-top: -30px;">
+                <a href="Sub Menu/Riwayat.html" class="text-decoration-none text-white">KIRIM</a>
+            </button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="d-flex justify-content-center mt-3" style="margin-bottom: -3vh;">
+            <hr class="hr w-75">
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-white text-muted">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom">
+            <!-- Left -->
+                <div class="me-5 d-flex justify-content-center align-items-center">
+                    <img src="./Assets/logo footer.png" alt="logo footer" class="me-3 ms-3" style="height: 70px;">
+                    <p class="lh-sm pt-3" style="font-size: 14px;">
+                        “Dari bekas menjadi berkah”
+                        <br>
+                        Mari bantu sesama dengan mendonasikan barang bekas layak 
+                        <br>
+                        pakai kepada orang yang membutuhkan
+                    </p>
+                </div>
+                <!-- Left -->
+            
+                <!-- Right -->
+                <div class="d-flex justify-content-center align-items-center justify-content-between">
+                    <a href="" class="me-4 link-secondary fa fa-2x black" style="color: black;">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary fa fa-2x" style="color: black;">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary fa fa-2x" style="color: black;">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary fa fa-2x" style="color: black;">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+        </footer>
+        <!-- Footer -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./Donasi.js"></script>
+  </body>
+</html>

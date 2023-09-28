@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Poppins;
+}
+
+.nav{
+    margin: -6px;
+    display: flex;
+}
+.nav-link{
+    color: #000000;
+    margin-right: 5px;
+    /* background-color: #E4C988; */
+    border-radius: 15px;
+}
+#svg{
+    float: left;
+    margin-top: -10px;
+}
+#riwayat{
+    margin-left: 10px;
+}
+#tp{
+    margin-right: 650px;
+}
+#ds{
+    background-color: #84D2C5;
+    color: white;
+}
+#log{
+    background-color: #E4C988;
+    color: white;
+}
+
+.img-fluid{
+    margin-top: -50px;
+}

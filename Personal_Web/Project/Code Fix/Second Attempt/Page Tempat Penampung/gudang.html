@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Penampung page</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.cdnfonts.com/css/nexa-bold" rel="stylesheet">
+        <style>@import url('https://fonts.cdnfonts.com/css/nexa-bold');</style>
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link href="Assets2/POPPINS/">
+
+        <style>
+            .gudang-back:hover{
+                background-color: #E4C988 !important;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light shadow sticky-top" style="background-color: white;">
+            <div class="container-fluid">
+                <a href="Home Sign Penampung.html" class="me-4" style="width: 100px;">
+                    <img src="./Screenshot 2023-05-10 095045.png" alt="Logo beri barang" class="logoPenampung">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarResponsive" style="font-family: Poppins;">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Status</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cerita-kami (Login Penampung).html">Cerita Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tempat-penampung (Login Penampung).html">Tempat Penampung</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <div class="d-flex" style="justify-content: flex-end;">
+                            <li>
+                                <a href="Profile Penampung.html" class="btn p-0">
+                                    <img src="../Sub Menu/img/icon-user.svg" alt="Icon User" class="p-0" style="width: 65%;"/>
+                                </a>
+                            </li>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- BODY MAIN CARD -->
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-lg-12 col-md-12 px-5">
+                    <div class="d-flex align-item">
+                        <a href="home.html" class="gudang-back mt-1 me-3 bg-white rounded-pill" style="height: 30px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#4B4B4B" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                            </svg>
+                        </a>
+                        <h3 class="pb-3 text-dark fw-bold">Gudang</h3>
+                    </div>
+                    
+                    <div class="card-home p-4">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 col-md-12">
+                                <div class="card p-4 mb-5" style="border-radius: 15px;">
+                                    <div class="row">
+                                        <!-- Gambar -->
+                                        <div class="col-5 col-lg-5 col-md-5">
+                                            <img src="Assets2/home.png" class="w-100 h-100">
+                                        </div>
+                                        <!-- Detail -->
+                                        <div class="col-7 col-lg-7 col-md-7">
+                                            <div class="row">
+                                                <p class="col-8 col-lg-8 col-md-8 fw-bold">Tempat Penampung</p>
+                                                <p class="col-4 col-lg-4 col-md-4 fw-bold pengiriman" onclick="ubahClassTeks(this)">Pengiriman</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Nama</p>
+                                                    <p>
+                                                        Lorem ipsum
+                                                        <br>
+                                                        dolor sit
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Alamat</p>
+                                                    <p>
+                                                        Jl. Lorem ipsum dolor sit
+                                                        <br>
+                                                        amet,consectetur
+                                                        <br>
+                                                        adipiscing elit
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <p class="col-8 col-lg-8 col-md-8 fw-bold">Tempat Disalurkan</p>
+                                                <p class="col-4 col-lg-4 col-md-4"></p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Nama</p>
+                                                    <p>
+                                                        Yayasan Yatim
+                                                        <br>
+                                                        Harmoni
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Alamat</p>
+                                                    <p>
+                                                        Jl. Lorem ipsum dolor sit
+                                                        <br>
+                                                        amet,consectetur
+                                                        <br>
+                                                        adipiscing elit
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 col-md-12">
+                                <div class="card p-4 mb-5" style="border-radius: 15px;">
+                                    <div class="row">
+                                        <!-- Gambar -->
+                                        <div class="col-5 col-lg-5 col-md-5">
+                                            <img src="Assets2/home.png" class="w-100 h-100">
+                                        </div>
+                                        <!-- Detail -->
+                                        <div class="col-7 col-lg-7 col-md-7">
+                                            <div class="row">
+                                                <p class="col-8 col-lg-8 col-md-8 fw-bold">Tempat Penampung</p>
+                                                <p class="col-4 col-lg-4 col-md-4 fw-bold pengiriman" onclick="ubahClassTeks(this)">Pengiriman</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Nama</p>
+                                                    <p>
+                                                        Lorem ipsum
+                                                        <br>
+                                                        dolor sit
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Alamat</p>
+                                                    <p>
+                                                        Jl. Lorem ipsum dolor sit
+                                                        <br>
+                                                        amet,consectetur
+                                                        <br>
+                                                        adipiscing elit
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <p class="col-8 col-lg-8 col-md-8 fw-bold">Tempat Disalurkan</p>
+                                                <p class="col-4 col-lg-4 col-md-4"></p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Nama</p>
+                                                    <p>
+                                                        Yayasan Yatim
+                                                        <br>
+                                                        Harmoni
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Alamat</p>
+                                                    <p>
+                                                        Jl. Lorem ipsum dolor sit
+                                                        <br>
+                                                        amet,consectetur
+                                                        <br>
+                                                        adipiscing elit
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-6 col-md-12">
+                                <div class="card p-4 mb-5" style="border-radius: 15px;">
+                                    <div class="row">
+                                        <!-- Gambar -->
+                                        <div class="col-5 col-lg-5 col-md-5">
+                                            <img src="Assets2/home.png" class="w-100 h-100">
+                                        </div>
+                                        <!-- Detail -->
+                                        <div class="col-7 col-lg-7 col-md-7">
+                                            <div class="row">
+                                                <p class="col-8 col-lg-8 col-md-8 fw-bold">Tempat Penampung</p>
+                                                <p class="col-4 col-lg-4 col-md-4 fw-bold disalurkan" onclick="ubahClassTeks(this)">Disalurkan</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Nama</p>
+                                                    <p>
+                                                        Lorem ipsum
+                                                        <br>
+                                                        dolor sit
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Alamat</p>
+                                                    <p>
+                                                        Jl. Lorem ipsum dolor sit
+                                                        <br>
+                                                        amet,consectetur
+                                                        <br>
+                                                        adipiscing elit
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <p class="col-8 col-lg-8 col-md-8 fw-bold">Tempat Disalurkan</p>
+                                                <p class="col-4 col-lg-4 col-md-4"></p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Nama</p>
+                                                    <p>
+                                                        Yayasan Yatim
+                                                        <br>
+                                                        Harmoni
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Alamat</p>
+                                                    <p>
+                                                        Jl. Lorem ipsum dolor sit
+                                                        <br>
+                                                        amet,consectetur
+                                                        <br>
+                                                        adipiscing elit
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 col-md-12">
+                                <div class="card p-4 mb-5" style="border-radius: 15px;">
+                                    <div class="row">
+                                        <!-- Gambar -->
+                                        <div class="col-5 col-lg-5 col-md-5">
+                                            <img src="Assets2/home.png" class="w-100 h-100">
+                                        </div>
+                                        <!-- Detail -->
+                                        <div class="col-7 col-lg-7 col-md-7">
+                                            <div class="row">
+                                                <p class="col-8 col-lg-8 col-md-8 fw-bold">Tempat Penampung</p>
+                                                <p class="col-4 col-lg-4 col-md-4 fw-bold disalurkan" onclick="ubahClassTeks(this)">Disalurkan</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Nama</p>
+                                                    <p>
+                                                        Lorem ipsum
+                                                        <br>
+                                                        dolor sit
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Alamat</p>
+                                                    <p>
+                                                        Jl. Lorem ipsum dolor sit
+                                                        <br>
+                                                        amet,consectetur
+                                                        <br>
+                                                        adipiscing elit
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <p class="col-8 col-lg-8 col-md-8 fw-bold">Tempat Disalurkan</p>
+                                                <p class="col-4 col-lg-4 col-md-4"></p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Nama</p>
+                                                    <p>
+                                                        Yayasan Yatim
+                                                        <br>
+                                                        Harmoni
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Alamat</p>
+                                                    <p>
+                                                        Jl. Lorem ipsum dolor sit
+                                                        <br>
+                                                        amet,consectetur
+                                                        <br>
+                                                        adipiscing elit
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-6 col-md-12">
+                                <div class="card p-4 mb-5" style="border-radius: 15px;">
+                                    <div class="row">
+                                        <!-- Gambar -->
+                                        <div class="col-5 col-lg-5 col-md-5">
+                                            <img src="Assets2/home.png" class="w-100 h-100">
+                                        </div>
+                                        <!-- Detail -->
+                                        <div class="col-7 col-lg-7 col-md-7">
+                                            <div class="row">
+                                                <p class="col-8 col-lg-8 col-md-8 fw-bold">Tempat Penampung</p>
+                                                <p class="col-4 col-lg-4 col-md-4 fw-bold pengambilan" onclick="ubahClassTeks(this)">Pengambilan</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Nama</p>
+                                                    <p>
+                                                        Lorem ipsum
+                                                        <br>
+                                                        dolor sit
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Alamat</p>
+                                                    <p>
+                                                        Jl. Lorem ipsum dolor sit
+                                                        <br>
+                                                        amet,consectetur
+                                                        <br>
+                                                        adipiscing elit
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <p class="col-8 col-lg-8 col-md-8 fw-bold">Tempat Disalurkan</p>
+                                                <p class="col-4 col-lg-4 col-md-4"></p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Nama</p>
+                                                    <p>
+                                                        Yayasan Yatim
+                                                        <br>
+                                                        Harmoni
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Alamat</p>
+                                                    <p>
+                                                        Jl. Lorem ipsum dolor sit
+                                                        <br>
+                                                        amet,consectetur
+                                                        <br>
+                                                        adipiscing elit
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 col-md-12">
+                                <div class="card p-4 mb-5" style="border-radius: 15px;">
+                                    <div class="row">
+                                        <!-- Gambar -->
+                                        <div class="col-5 col-lg-5 col-md-5">
+                                            <img src="Assets2/home.png" class="w-100 h-100">
+                                        </div>
+                                        <!-- Detail -->
+                                        <div class="col-7 col-lg-7 col-md-7">
+                                            <div class="row">
+                                                <p class="col-8 col-lg-8 col-md-8 fw-bold">Tempat Penampung</p>
+                                                <p class="col-4 col-lg-4 col-md-4 fw-bold pengambilan" onclick="ubahClassTeks(this)">Pengambilan</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Nama</p>
+                                                    <p>
+                                                        Lorem ipsum
+                                                        <br>
+                                                        dolor sit
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Alamat</p>
+                                                    <p>
+                                                        Jl. Lorem ipsum dolor sit
+                                                        <br>
+                                                        amet,consectetur
+                                                        <br>
+                                                        adipiscing elit
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <p class="col-8 col-lg-8 col-md-8 fw-bold">Tempat Disalurkan</p>
+                                                <p class="col-4 col-lg-4 col-md-4"></p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Nama</p>
+                                                    <p>
+                                                        Yayasan Yatim
+                                                        <br>
+                                                        Harmoni
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Alamat</p>
+                                                    <p>
+                                                        Jl. Lorem ipsum dolor sit
+                                                        <br>
+                                                        amet,consectetur
+                                                        <br>
+                                                        adipiscing elit
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-6 col-md-12">
+                                <div class="card p-4 mb-5" style="border-radius: 15px;">
+                                    <div class="row">
+                                        <!-- Gambar -->
+                                        <div class="col-5 col-lg-5 col-md-5">
+                                            <img src="Assets2/home.png" class="w-100 h-100">
+                                        </div>
+                                        <!-- Detail -->
+                                        <div class="col-7 col-lg-7 col-md-7">
+                                            <div class="row">
+                                                <p class="col-8 col-lg-8 col-md-8 fw-bold">Tempat Penampung</p>
+                                                <p class="col-4 col-lg-4 col-md-4 fw-bold pengambilan" onclick="ubahClassTeks(this)">Pengambilan</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Nama</p>
+                                                    <p>
+                                                        Lorem ipsum
+                                                        <br>
+                                                        dolor sit
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Alamat</p>
+                                                    <p>
+                                                        Jl. Lorem ipsum dolor sit
+                                                        <br>
+                                                        amet,consectetur
+                                                        <br>
+                                                        adipiscing elit
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <p class="col-8 col-lg-8 col-md-8 fw-bold">Tempat Disalurkan</p>
+                                                <p class="col-4 col-lg-4 col-md-4"></p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Nama</p>
+                                                    <p>
+                                                        Yayasan Yatim
+                                                        <br>
+                                                        Harmoni
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 col-lg-6 col-md-6">
+                                                    <p class="fw-bold">Alamat</p>
+                                                    <p>
+                                                        Jl. Lorem ipsum dolor sit
+                                                        <br>
+                                                        amet,consectetur
+                                                        <br>
+                                                        adipiscing elit
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="pb-3 mt-5">Barang yang dibatalkan</h3>
+                    <div class="card-home p-4">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 col-md-12">
+                                <a href="gudang-selected.html">
+                                    <div class="card p-4 mb-5" style="border-radius: 15px;">
+                                        <div class="row">
+                                            <!-- Gambar -->
+                                            <div class="col-5 col-lg-5 col-md-5">
+                                                <img src="Assets2/home.png" class="w-100 h-100">
+                                            </div>
+                                            <!-- Detail -->
+                                            <div class="col-7 col-lg-7 col-md-7">
+                                                <div class="row">
+                                                    <p class="col-8 col-lg-8 col-md-8 fw-bold">Tempat Penampung</p>
+                                                    <p class="col-4 col-lg-4 col-md-4 fw-bold dibatalkan">Dibatalkan</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6 col-lg-6 col-md-6">
+                                                        <p class="fw-bold">Nama</p>
+                                                        <p>
+                                                            Lorem ipsum
+                                                            <br>
+                                                            dolor sit
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 col-lg-6 col-md-6">
+                                                        <p class="fw-bold">Alamat</p>
+                                                        <p>
+                                                            Jl. Lorem ipsum dolor sit
+                                                            <br>
+                                                            amet,consectetur
+                                                            <br>
+                                                            adipiscing elit
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="col-8 col-lg-8 col-md-8 fw-bold">Tempat Disalurkan</p>
+                                                    <p class="col-4 col-lg-4 col-md-4"></p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6 col-lg-6 col-md-6">
+                                                        <p class="fw-bold">Nama</p>
+                                                        <p>
+                                                            Yayasan Yatim
+                                                            <br>
+                                                            Harmoni
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 col-lg-6 col-md-6">
+                                                        <p class="fw-bold">Alamat</p>
+                                                        <p>
+                                                            Jl. Lorem ipsum dolor sit
+                                                            <br>
+                                                            amet,consectetur
+                                                            <br>
+                                                            adipiscing elit
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-6 col-md-12">
+                                <a href="gudang-selected.html">
+                                    <div class="card p-4 mb-5" style="border-radius: 15px;">
+                                        <div class="row">
+                                            <!-- Gambar -->
+                                            <div class="col-5 col-lg-5 col-md-5">
+                                                <img src="Assets2/home.png" class="w-100 h-100">
+                                            </div>
+                                            <!-- Detail -->
+                                            <div class="col-7 col-lg-7 col-md-7">
+                                                <div class="row">
+                                                    <p class="col-8 col-lg-8 col-md-8 fw-bold">Tempat Penampung</p>
+                                                    <p class="col-4 col-lg-4 col-md-4 fw-bold dibatalkan">Dibatalkan</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6 col-lg-6 col-md-6">
+                                                        <p class="fw-bold">Nama</p>
+                                                        <p>
+                                                            Lorem ipsum
+                                                            <br>
+                                                            dolor sit
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 col-lg-6 col-md-6">
+                                                        <p class="fw-bold">Alamat</p>
+                                                        <p>
+                                                            Jl. Lorem ipsum dolor sit
+                                                            <br>
+                                                            amet,consectetur
+                                                            <br>
+                                                            adipiscing elit
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="col-8 col-lg-8 col-md-8 fw-bold">Tempat Disalurkan</p>
+                                                    <p class="col-4 col-lg-4 col-md-4"></p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6 col-lg-6 col-md-6">
+                                                        <p class="fw-bold">Nama</p>
+                                                        <p>
+                                                            Yayasan Yatim
+                                                            <br>
+                                                            Harmoni
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 col-lg-6 col-md-6">
+                                                        <p class="fw-bold">Alamat</p>
+                                                        <p>
+                                                            Jl. Lorem ipsum dolor sit
+                                                            <br>
+                                                            amet,consectetur
+                                                            <br>
+                                                            adipiscing elit
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-6 col-md-12">
+                                <a href="gudang-selected.html">
+                                    <div class="card p-4 mb-5" style="border-radius: 15px;">
+                                        <div class="row">
+                                            <!-- Gambar -->
+                                            <div class="col-5 col-lg-5 col-md-5">
+                                                <img src="Assets2/home.png" class="w-100 h-100">
+                                            </div>
+                                            <!-- Detail -->
+                                            <div class="col-7 col-lg-7 col-md-7">
+                                                <div class="row">
+                                                    <p class="col-8 col-lg-8 col-md-8 fw-bold">Tempat Penampung</p>
+                                                    <p class="col-4 col-lg-4 col-md-4 fw-bold dibatalkan">Dibatalkan</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6 col-lg-6 col-md-6">
+                                                        <p class="fw-bold">Nama</p>
+                                                        <p>
+                                                            Lorem ipsum
+                                                            <br>
+                                                            dolor sit
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 col-lg-6 col-md-6">
+                                                        <p class="fw-bold">Alamat</p>
+                                                        <p>
+                                                            Jl. Lorem ipsum dolor sit
+                                                            <br>
+                                                            amet,consectetur
+                                                            <br>
+                                                            adipiscing elit
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="col-8 col-lg-8 col-md-8 fw-bold">Tempat Disalurkan</p>
+                                                    <p class="col-4 col-lg-4 col-md-4"></p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6 col-lg-6 col-md-6">
+                                                        <p class="fw-bold">Nama</p>
+                                                        <p>
+                                                            Yayasan Yatim
+                                                            <br>
+                                                            Harmoni
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 col-lg-6 col-md-6">
+                                                        <p class="fw-bold">Alamat</p>
+                                                        <p>
+                                                            Jl. Lorem ipsum dolor sit
+                                                            <br>
+                                                            amet,consectetur
+                                                            <br>
+                                                            adipiscing elit
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <center>
+                <hr style="color:gray" class="pb-2 w-75">
+            </center>
+            <div class="row">
+                <div class="col-2 col-lg-1 col-md-2">
+                    <img src="Assets2/footer.png">
+                </div>
+                <div class="col-6 col-lg-7 col-md-6">
+                    <p>
+                        “Dari bekas menjadi berkah”
+                        <br>
+                        Mari bantu sesama dengan mendonasikan barang bekas layak
+                        <br>
+                        pakai kepada orang yang membutuhkan
+                    </p>
+                </div>
+                <div class="col-4 col-lg-4 col-md-4">
+                    <div class="d-flex justify-content-around pt-3">
+                        <img src="Assets2/ig.png">
+                        <img src="Assets2/wa.png">
+                        <img src="Assets2/yt.png">
+                        <img src="Assets2/twt.png">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <!-- Tambahkan Bootstrap JS dan script JavaScript -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script>
+    // Daftar class dan teks yang akan digunakan
+    const classes = ['pengambilan', 'pengiriman', 'disalurkan', 'dibatalkan'];
+    const texts = ['Pengambilan', 'Pengiriman', 'Disalurkan', 'Dibatalkan'];
+
+    // Tentukan posisi awal
+    let position = 1;
+
+    // Fungsi untuk mengubah class dan teks saat elemen diklik
+    function ubahClassTeks(elem) {
+      // Hapus class saat ini
+      elem.classList.remove(classes[position]);
+
+      // Pindah ke posisi berikutnya
+      position = (position + 1) % classes.length;
+
+      // Tambahkan class dan teks baru
+      elem.classList.add(classes[position]);
+      elem.textContent = texts[position];
+    }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+.w-10sen {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 135%;
+}
+.nav-item{
+    font-size: 14px;
+}
+#ds:hover{
+    background-color: #6A826A;
+    border-radius: 15px;
+}
+#acc:hover{
+    background-color: #3D2B22;
+    border-radius: 15px;
+}
+
+.middle{
+    display: flex;
+    align-content: space-between;
+    flex-direction: row;
+    padding-left: 200px;
+}
+
+.kembali{
+    font-weight: bold;
+    font-family: poppins;
+    padding-top: 20px;
+    padding-left: 200px;
+    color: black;
+}
+
+.accordion{
+    padding-left: 200px;
+}
+
+
+.accordion-text{
+    font-weight: bold;
+    font-family: poppins;
+}
+
+.accordion-body{
+    background-color: #D5C4A4;
+    font-weight: bold;
+    font-family: poppins;
+}
+
+.accordion-button{
+    background-color: #B99B6C;
+    font-weight: bold;
+    font-family: poppins;
+    color: white;
+}
+
+.status{
+    padding-left: 200px;
+}
+
+.status-text{
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: poppins;
+}
+
+
+.status-badge{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.card-body-1{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+}
