@@ -1,0 +1,526 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: white;
+    font-family: "Inter",sans-serif;
+}
+
+/* navbar */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #7C3E66;
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+
+/* REVISI */
+header .logo{
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+    color: #EEF3D2;
+    margin-left: -75px;
+}
+
+header .navbar ul{
+    list-style: none;
+    margin-left: -50px;
+    margin-right: 50px;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+/* REVISI */
+header .navbar ul li a{
+    font-size: 16px;
+    padding: 17px;
+    color: white;
+    display: block;
+    font-weight: 600;
+}
+
+/* REVISI */
+header nav ul li .lang{
+    font-weight: 400;
+    margin-left: 290px;
+    margin-right: -155px;
+}
+
+header nav ul li{
+    /* margin-left: 15px; */
+
+    margin-right: 15px;
+}
+
+
+/* .navbar :last-child{
+    margin-left: 50px;
+    margin-right: -25px;
+} */
+
+header nav ul li .active,header .navbar ul li a:hover{
+    background-color: #947EC3;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    /* top: 85px; */
+    left: 40px;
+    /* margin: auto; */
+    /* text-align: center; */
+    
+    
+    width: 190px;
+    background-color: #B689C0;
+    display: none;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+#menubar{
+    display: none;
+}
+
+header label{
+    font-size: 20px;
+    cursor: pointer;
+    color:white;
+    display: none;
+}
+
+
+@media only screen and (max-width:1180px){
+
+    header{
+        padding: 20px;
+    }
+
+    header label{
+        display: initial;
+        margin-right: 15px;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #B689C0;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: none;
+    }
+
+    header .navbar a{
+        margin-left: 80px;
+        width: 100%;
+    }
+
+    header .navbar ul li{
+        width: 100%;
+    }
+
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li{
+        background: #B689C0;
+    }
+
+    header .logo{
+        margin-left: 10px;
+    }
+
+    #menubar:checked~.navbar{
+        display: initial;
+    }
+}
+
+@media only screen and(max-width: 884px){
+    header label{
+        margin-left: 150px;
+    }
+
+    header label{
+        display: initial;
+        margin-right: 200px;
+    }
+
+    .gambar{
+        background-image: url(gambar/Promotion_img_hp.png);
+        background-size: 380px;
+    }
+
+    .gambar img{
+        opacity: 0;
+        margin-bottom: 50px;
+    }
+
+    .slogan h2{
+        margin-top: -50px;
+        font-size: 20px;
+    }
+
+    .slogangrid{
+        transform: scale(0.6);
+    }
+
+    .slogan p{
+        padding: 0 120px;
+        margin-top: -50px;
+        margin-left: -200px;
+    }
+
+    .containergrid{
+        transform: scale(0.9);
+    }
+
+    .containergrid h2{
+        margin-top: -130px;
+    }
+}
+/* banner */
+
+/* REVISI */
+.gambar{
+    min-width: 300px;
+    position: relative;
+    top: 50px;
+}
+
+
+@media only screen and (max-width:1180px){
+    .gambar{
+        top: 65px;
+    }
+    /* .gambar img{
+        height: 200px;
+    } */
+}
+
+
+/* slogan */
+.slogan{
+    margin: auto;
+    align-items: center;
+    min-width: 300px;
+    position: relative;
+    top: 150px;
+}
+
+.slogan h2{
+    text-align: center;
+    color: #7C3E66;
+    margin-bottom: 45px;
+    /* REVISI */
+}
+
+.slogangrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.slogan1,.slogan2,.slogan3,.slogan4,.slogan5{
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+/* content */
+.containergrid{
+    max-width: 1440px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 250px;
+    margin-bottom: 100px;
+}
+
+.containergrid h2{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #7C3E66;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.box{
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 2px 0px 1px #888888;
+    transition: transform 0.5s;
+}
+
+.box h4{
+    padding: 0 25px 8px;
+}
+
+.box p{
+    padding: 0 25px 8px;
+}
+
+.rating{
+    padding: 0 25px 15px;
+}
+
+.box:hover{
+    transform: translateY(-10px);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(30px,auto);
+    gap: 20px;
+    /* grid-template-rows: 1fr 1fr; */
+
+}
+
+
+.grid img{
+    height: 228px;
+    width: 228px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px ;
+    background: #eee;
+}
+
+.grid-item1{
+    grid-row: 1 / 1 ;
+    grid-column: span 2;
+    text-align: center;
+    font-weight: 600;
+    color: #7C3E66;
+    font-size: 20px;
+}
+
+.grid-item2{
+    grid-column: span 2;
+    text-align: center;
+    font-weight: 600;
+    color: #7C3E66;
+    font-size: 20px;
+}
+
+.grid-item3{
+    grid-column: 1/2;
+    justify-self: end;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.grid-item3 h4{
+    font-weight: 400;
+}
+
+.grid-item4{
+    grid-column: 2/3;
+    font-weight: 400;
+    font-size: 18px;
+    justify-self: start;
+}
+.grid-item4 h4{
+    font-weight: 400;
+}
+
+.grid-item5{
+    grid-column: 3/4;
+    justify-self: end;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.grid-item5 h4{
+    font-weight: 400;
+}
+
+.grid-item6{
+    grid-column: 4/5;
+    font-weight: 400;
+    font-size: 18px;
+    justify-self: start;
+}
+
+.grid-item6 h4{
+    font-weight: 400;
+}
+
+.rating{
+    color: #FFD84D;
+}
+
+@media only screen and (max-width: 960px) {
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-item1{
+        grid-column: 1/3;
+    }
+    .grid-item2{
+        grid-column: 1/3;
+        grid-row: 3;
+    }
+    .grid-item3{
+        grid-column: 1/2;
+        justify-self: end;
+    }
+    .grid-item4{
+        grid-column: 2/3;
+        justify-self: start;
+    }
+    .grid-item5{
+        grid-column: 1/2;
+        justify-self: end;
+        grid-row: 4;
+    }
+    .grid-item6{
+        grid-column: 2/3;
+        justify-self: start;
+        grid-row: 4;
+    }
+}
+
+
+@media only screen and (max-width: 520px) {
+    .gambar{
+        background-image: url(gambar/Promotion\ img\ hp.png);
+        background-size: 100vw;
+        height: 32vw;
+    }
+    .gambar img{
+        opacity: 0;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    .grid-item1{
+        grid-column: 1/1;
+        grid-row: 1;
+    }
+    .grid-item2{
+        grid-column: 1/1;
+        grid-row: 4;
+    }
+    .grid-item3{
+        grid-column: 1/1;
+        grid-row: 2;
+        justify-self: center;
+    }
+    .grid-item4{
+        grid-column: 1/1;
+        grid-row: 3;
+        justify-self: center;
+    }
+    .grid-item5{
+        grid-column: 1/1;
+        grid-row: 5;
+        justify-self: center;
+    }
+    .grid-item6{
+        grid-column: 1/1;
+        grid-row: 6;
+        justify-self: center;
+    }
+    .slogangrid{
+        transform: scale(0.9);
+    }
+}
+
+@media only screen and (max-width: 395px){
+    .gambar{
+        background-image: url(gambar/Promotion\ img\ hp.png);
+        background-size: 100vw;
+        height: 32vw;
+    }
+    .gambar img{
+        opacity: 0;
+    }
+    .slogangrid{
+        transform: scale(0.8);
+    }
+}
+
+/* footer */
+.row1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container{
+    max-width: 1000px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.footer{
+    background: #243A73;
+    color: #6A67CE;
+    font-size: 16px;
+    padding: 30px 0 30px;
+    
+}
+
+.footer h1{
+    margin-bottom: 30px;
+    color: white;
+}
+
+.footer-col-2 i, .footer-col-1 i{
+    color: white;
+}
+
+.footer-col-2 p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.footer-col-1 p{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: white;
+    
+}
+
+.footer-col-2{
+    margin-top: 30px;
+}
+
+
+
+.brand{
+    margin-bottom: 25px;
+}
+
+
+@media only screen and (max-width:600px){
+    .row1{
+        text-align: center;
+    }
+}

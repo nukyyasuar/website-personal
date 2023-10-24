@@ -17,3 +17,15 @@
 #logocontact img:hover{
     filter: brightness(200%) contrast(200%);
 }
+
+.skill-hov{
+    transition: all .4s ease;
+}
+.col .skill-hov:hover{
+    opacity: 75% !important;
+}
+
+#cv-hover a:hover{
+    background-color: white;
+    color: black;
+}

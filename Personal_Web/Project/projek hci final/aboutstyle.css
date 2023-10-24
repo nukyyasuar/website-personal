@@ -1,0 +1,367 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: white;
+    font-family: "Inter",sans-serif;
+}
+
+/* navbar */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #7C3E66;
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+
+/* REVISI */
+header .logo{
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+    color: #EEF3D2;
+    margin-left: -75px;
+}
+
+header .navbar ul{
+    list-style: none;
+    margin-left: -50px;
+    margin-right: 50px;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+/* REVISI */
+header .navbar ul li a{
+    font-size: 16px;
+    padding: 17px;
+    color: white;
+    display: block;
+    font-weight: 600;
+}
+
+/* REVISI */
+header nav ul li .lang{
+    font-weight: 400;
+    margin-left: 290px;
+    margin-right: -155px;
+}
+
+header nav ul li{
+    /* margin-left: 15px; */
+
+    margin-right: 15px;
+}
+
+
+/* .navbar :last-child{
+    margin-left: 50px;
+    margin-right: -25px;
+} */
+
+header nav ul li .active,header .navbar ul li a:hover{
+    background-color: #947EC3;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    /* top: 85px; */
+    left: 40px;
+    /* margin: auto; */
+    /* text-align: center; */
+    
+    
+    width: 190px;
+    background-color: #B689C0;
+    display: none;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+#menubar{
+    display: none;
+}
+
+header label{
+    font-size: 20px;
+    cursor: pointer;
+    color:white;
+    display: none;
+}
+
+
+@media only screen and (max-width:1180px){
+
+    header{
+        padding: 20px;
+    }
+
+    header label{
+        display: initial;
+        margin-right: 15px;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #B689C0;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: none;
+    }
+
+    header .navbar a{
+        margin-left: 80px;
+        width: 100%;
+    }
+
+    header .navbar ul li{
+        width: 100%;
+    }
+
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li{
+        background: #B689C0;
+    }
+
+    header .logo{
+        margin-left: 10px;
+    }
+
+    #menubar:checked~.navbar{
+        display: initial;
+    }
+}
+
+@media only screen and(max-width: 884px){
+    header label{
+        margin-left: 150px;
+    }
+
+    header label{
+        display: initial;
+        margin-right: 200px;
+    }
+
+
+}
+/* content */
+.containergrid{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-bottom: 150px;
+
+}
+
+
+.containergrid h1{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #7C3E66;
+}
+
+.grid{
+    display: grid;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: (100px,auto);
+    column-gap: 2em;
+    row-gap: 1em;
+    grid-template-areas: 
+    "gambar konten1 konten1"
+    "gambar konten2 konten3"
+    "gambar konten4 konten4"
+    ;
+
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.missionlist{
+    list-style-type: disc;
+}
+
+.griditem1{
+    grid-area: gambar;
+    grid-column: 1/1;
+    align-self: center;
+}
+
+.griditem1 img{
+    max-width: 100%;
+    height: auto;
+}
+
+.griditem2{
+    grid-area: konten1;
+    grid-column: 2/5;
+    text-align: justify;
+}
+
+.griditem2 h2, .griditem3 h2, .griditem4 h2, .griditem5 h2{
+    color: #7C3E66;
+}
+
+.griditem3{
+    grid-area: konten2;
+    text-align: justify;
+    grid-column: 2/3;
+}
+
+.griditem4{
+    grid-area: konten3;
+    text-align: justify;
+    grid-column: 3/4;
+}
+
+.griditem5{
+    text-align: justify;
+    grid-area: konten4;
+    grid-column: 2/5;
+}
+
+.griditem1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.griditem1 img{
+    width:574px;
+    height: 483.59px;
+    background-color: #E7D8C0;
+}
+
+@media only screen and (max-width:1420px){
+    .grid{
+        padding: 0px 25px 0px;
+    }
+
+}
+
+@media only screen and (max-width:1000px){
+    .grid{
+        grid-template-areas: 
+        "gambar gambar gambar"
+        "konten1 konten1 konten1"
+        "konten2 konten2 konten2"
+        "konten3 konten3 konten3"
+        "konten4 konten4 konten4";
+    }
+
+    .grid{
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .griditem1{
+        grid-area: gambar;
+        margin: auto;
+    }
+
+    .griditem2{
+        grid-area: konten1;
+    }
+
+    .griditem3{
+        grid-area: konten2;
+    }
+
+    .griditem4{
+        grid-area: konten3;
+    }
+
+    .griditem5{
+        grid-area: konten4;
+    }
+}
+
+
+/* footer */
+.row1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container{
+    max-width: 1000px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.footer{
+    background: #243A73;
+    color: #6A67CE;
+    font-size: 16px;
+    padding: 30px 0 30px;
+    
+}
+
+.footer h1{
+    margin-bottom: 30px;
+    color: white;
+}
+
+.footer-col-2 i, .footer-col-1 i{
+    color: white;
+}
+
+.footer-col-2 p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.footer-col-1 p{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: white;
+    
+}
+
+.footer-col-2{
+    margin-top: 30px;
+}
+
+
+
+.brand{
+    margin-bottom: 25px;
+}
+
+
+@media only screen and (max-width:600px){
+    .row1{
+        text-align: center;
+    }
+}

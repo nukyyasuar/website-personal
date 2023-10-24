@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="subscribe.css">
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="script.js"></script>
+    <title>VORSKINS</title>
+</head>
+<body>
+        <!-- navbar -->
+        <header>
+            <a href="#" class="logo">VORSKINS</a>
+            <input type="checkbox" id="menubar">
+            <label for="menubar"><img src="gambar/menu2.png"></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="homepage.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="promotion.html">PROMOTIONS</a></li>
+                    <li class="product"><a href="#" >PRODUCTS</a>
+                        <ul>
+                            <li><a href="skincare.html">SKIN CARE</a></li>
+                            <li><a href="bodycare.html">BODY CARE</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"class="active">SUBSCRIBE</a></li>
+                    <li><a href="#" class="lang">EN</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- content -->
+        <div class="containergrid">
+            <h1>Input your data down here, if <br>you want to get news and<br> further update</h1>
+            <form id="myform" method="post" action="success.html">
+                    <div class="namadepan">
+                        <label for="fullname">Full Name</label><br>
+                        <input id="fullname" type="name" name="fullname" placeholder="John Doe" required>
+                    </div>
+                    <div class="email">
+                        <label for="email">Email</label><br>
+                        <input id="email" type="email" name="email" placeholder="johndoe@gmail.com" required>
+                    </div>
+                    <div class="telp">
+                        <label for="phone">Phone Number</label><br>
+                        <input id="phone" type="text" name="phone" placeholder="081234567890" required>
+                    </div>
+                    <div class="gender">
+                        <h4>Preference</h4>
+                        <input type="radio" id="skin" name="pref" value="skin" style="height:15px; width:15px;">
+                        <label for="skin" class="button">Skin Care</label>
+                        <input type="radio" id="body" name="pref" value="body" style="height:15px; width: 15px;">
+                        <label for="body" class="button">Body Care</label>
+                    </div>
+                    <div class="agreement">
+                        <p>Send me information about<br> new products and promotions</p>
+                        <label for="agreement"><input id="agreementCB" type="checkbox" value="agree" style="height:15px; width:15px;" required></label>
+                    </div>
+                    <p id="errormessage"></p>
+                    <button id="submitbtn" type="submit">SUBMIT</button>
+            </form>
+        </div>
+
+
+
+        <div class="footer">
+            <div class="container">
+                <div class="row1">
+                    <div class="footer-col-1">
+                        <h1 class="brand">VORSKINS</h1>
+                        <p>Cosmetics that make your skin well-groomed and <br>shining bright.</p>
+                        <p>BINUS University, Alam Sutera, BSD</p>
+                        <p><span class="iconify-inline" data-icon="akar-icons:whatsapp-fill"></span> 0812 3456 7890</p>
+                    </div>
+                    <div class="footer-col-2">
+                        <p><span class="iconify-inline" data-icon="dashicons:email-alt"></span> VOrskins@gmail.com</p>
+                        <p><span class="iconify-inline" data-icon="akar-icons:instagram-fill"></span> @VOrskincosmetics</p>
+                        <p><span class="iconify-inline" data-icon="akar-icons:facebook-fill"></span> VOrskincosmetics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

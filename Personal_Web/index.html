@@ -20,28 +20,31 @@
     <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
 </head>
 
-<body class="m-0 p-0" style="background-color: #1A1A1A;">
+<body class="m-0 p-0" style="background-color: #1A1A1A; min-width: 1300px;">
     <!-- Particle -->
     <div class="">
-        <!-- <canvas class="background"></canvas> -->
+        <canvas class="background"></canvas>
     </div>
 
     <!-- Navbar -->
     <div id="navbar" class="navbar sticky-top px-3" style="background-color: #1A1A1A;">
         <div class="container-fluid">
-            <a href="#" class="nav-link fs-4">NUKY.</a>
+            <a href="#" class="nav-link fs-4 fw-semibold">NUKY.</a>
             <ul class="nav">
                 <li class="nav-item">
                     <a href="#scrollspyaboutme" class="nav-link">About Me</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a href="#scrollspycv" class="nav-link">CV</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a href="#scrollspyproject" class="nav-link">Project</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Hobbies</a>
+                    <a href="#scrollspyskill" class="nav-link">Skills</a>
+                </li>
+                <li id="cv-hover" class="nav-item text-b ms-2">
+                    <a href="./Assets/nuky_cv.pdf" class="nav-link border border-1 rounded-3">CV</a>
                 </li>
             </ul>
         </div>
@@ -52,7 +55,7 @@
         <div class="row align-item-start">
             <div class="col">
                 <div class="d-flex justify-content-end">
-                    <img src="Assets/nuky_photo.jpg" alt="" class="rounded-pill me-5 border border-5 border-white" style="width: 60%; box-shadow: 0px 0px 100px -25px #5C9CF6;"> 
+                    <img src="Assets/nuky2-edit_photo.jpg" alt="" class="rounded-pill me-5 border border-5 border-white" style="width: 55%;"> 
                 </div>
             </div>
             <div class="col d-flex justify-content-start">
@@ -78,23 +81,69 @@
     </div>
 
     <!-- Content About Me -->
-    <!-- <div class="" style="margin-bottom: 100px;">
-        <p id="scrollspyaboutme">scrollspy</p>
-        <div>
-            <p class="fs-4 text-center text-white fw-semibold">
-                Let me introduce myself!
-            </p>
+    <section class="bg-white" style="height: 700px;">
+        <div class="text-center">
+            <p id="scrollspyaboutme" class="text-black opacity-0">scrollspy</p>
         </div>
-        
-        <div class="bg-white container-fluid rounded-5" style="height: 580px; width: 1300px;">
-            <div class="container h-100 d-flex">
-                <div class="row align-items-center text-center border-end border-5 border-dark w-100" style="margin-left: 0px;">
-                    <div class="">
+        <div class="px-4 d-flex" style="margin-bottom: 100px;">
+            <!-- <div class="container">
+                <div class="row row-cols-3">
+                    <div class="col">
+                        <div class="bg-white rounded-5 p-4 mb-3">
+                            <div class="mb-2">
+                                <img src="Assets/binus_logo.png" alt="" class="" style="width: 130px;">
+                            </div>
+                            <p class="mb-auto">
+                                Undergraduate at
+                            </p>
+                            <p class="mb-auto fs-5 fw-bold">
+                                Bina Nusantara University
+                            </p>
+                            <p>
+                                Computer Science Major
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <p class="fw-bold mb-0" style="font-size: 50px;">
+                                <span class="text-white">HELLO</span><span style="color: #5C9CF6;">!</span>
+                            </p>
+                            <p class="text-white fw-semibold fs-3 mb-0">
+                                Here is my story
+                            </p>
+                            <p class="fs-5" style="color: lightgrey;">
+                                My full name is Nuky Yasuar Zamzamy but you can call me Nuky. Im currently a 5th student in Bina Nusantara University and i take computer science major. Since highschool i do a lot of design espescially Graphic Design, trying new thing, and try to be more creative on every design. As times goes i know a thing that called UI/UX Designer, and i got interest. Trying something new and learn how to make good UI/UX from people site as reference, i also got the curriculum about it in colledge. Fronted dev is something that are really related to UI/UX design. Because of that i decide to be UI/UX Designer and Frontend Dev. <br> <br>
+                                Other than that i've interest in camera, photography and videography. Sometimes i do hunting and travelling for photo, capture anything i found and set the good angle of it. At one moment, friend of mine that have a Live Streaming company called "Reddot Live Streaming" invite me to be the freelancer. So i accept it. Its been 2 years now, since 2021.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="bg-white rounded-5 p-4">
+                            <div class="mb-2">
+                                <img src="Assets/reddot_logo.png" alt="" class="" style="width: 80px;">
+                            </div>
+                            <p class="mb-auto">
+                                Freelancer at
+                            </p>
+                            <p class="mb-auto fs-5 fw-bold">
+                                Reddot Livestream
+                            </p>
+                            <p>
+                                Camera Operator
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="container mx-1 me-3 w-25" style="margin-top: 100px;">
+                <div class="row align-items-center text-center">
+                    <div class="bg-white rounded-5 p-4 mb-3 shadow">
                         <div class="mb-2">
-                            <img src="/Assets/Binus Logo.png" alt="" class="" style="width: 130px;">
+                            <img src="Assets/binus_logo.png" alt="" class="" style="width: 130px;">
                         </div>
                         <p class="mb-auto">
-                            Currently student at
+                            Undergraduate at
                         </p>
                         <p class="mb-auto fs-5 fw-bold">
                             Bina Nusantara University
@@ -103,9 +152,9 @@
                             Computer Science Major
                         </p>
                     </div>
-                    <div class="">
-                        <div class="mb-1">
-                            <img src="/Assets/Reddot Logo.png" alt="" class="" style="width: 100px;">
+                    <div class="bg-white rounded-5 p-4 shadow">
+                        <div class="mb-2">
+                            <img src="Assets/reddot_logo.png" alt="" class="" style="width: 80px;">
                         </div>
                         <p class="mb-auto">
                             Freelancer at
@@ -118,97 +167,38 @@
                         </p>
                     </div>
                 </div>
-                <div class="row container-fluid align-items-center border-end border-5 border-dark w-100">
-                    <div class="">
-                        <p class="text-center mx-4">
-                            #MyStory#
-                        </p>
-                    </div>
-                </div>
-                <div class="row container-fluid text-center align-items-center">
-                    <div class="">
-                        <p class="text-center">
-                            #BlankCanvas#
-                        </p>
-                    </div>
-                </div>
             </div>
-        </div>
-    </div> -->
-    <div class="text-center">
-        <p id="scrollspyaboutme" class="text-white opacity-0">scrollspy</p>
-    </div>
-    <div class="px-4 d-flex" style="margin-bottom: 100px;">
-        <div class="container mx-1 me-3 w-25" style="margin-top: 100px;">
-            <div class="row align-items-center text-center">
-                <div class="bg-white rounded-5 p-4 mb-3" style="box-shadow: 10px 10px 80px -25px #5C9CF6;">
-                    <div class="mb-2">
-                        <img src="Assets/binus_logo.png" alt="" class="" style="width: 130px;">
-                    </div>
-                    <p class="mb-auto">
-                        Undergraduate at
+            <div class="container-fluid justify-content-end d-flex w-100" style="width: 98%;">
+                <div class="" style="margin-top: 100px;">
+                    <p class="fw-bold mb-0" style="font-size: 50px;">
+                        <span style="color: #323232;">HELLO</span><span style="color: #5C9CF6;">!</span>
                     </p>
-                    <p class="mb-auto fs-5 fw-bold">
-                        Bina Nusantara University
+                    <p class="fw-semibold fs-3 mb-0" style="color: #323232;">
+                        Here is my story
                     </p>
-                    <p>
-                        Computer Science Major
-                    </p>
-                </div>
-                <div class="bg-white rounded-5 p-4" style="box-shadow: 10px 10px 80px -25px #5C9CF6;">
-                    <div class="mb-2">
-                        <img src="Assets/reddot_logo.png" alt="" class="" style="width: 80px;">
-                    </div>
-                    <p class="mb-auto">
-                        Freelancer at
-                    </p>
-                    <p class="mb-auto fs-5 fw-bold">
-                        Reddot Livestream
-                    </p>
-                    <p>
-                        Camera Operator
+                    <p class="fs-5" style="color: #353535;">
+                        My full name is Nuky Yasuar Zamzamy but you can call me Nuky. Im currently a 5th student in Bina Nusantara University and i take computer science major. Since highschool i do a lot of design espescially Graphic Design, trying new thing, and try to be more creative on every design. As times goes i know a thing that called UI/UX Designer, and i got interest. Trying something new and learn how to make good UI/UX from people site as reference, i also got the curriculum about it in colledge. Fronted dev is something that are really related to UI/UX design. Because of that i decide to be UI/UX Designer and Frontend Dev. <br> <br>
+                        Other than that i've interest in camera, photography and videography. Sometimes i do hunting and travelling for photo, capture anything i found and set the good angle of it. At one moment, friend of mine that have a Live Streaming company called "Reddot Live Streaming" invite me to be the freelancer. So i accept it. Its been 2 years now, since 2021.
                     </p>
                 </div>
             </div>
         </div>
-        <div class="container-fluid justify-content-end d-flex w-100" style="width: 98%;">
-            <div class="" style="margin-top: 100px;">
-                <p class="fw-bold mb-0" style="font-size: 50px;">
-                    <span class="text-white">HELLO</span><span style="color: #5C9CF6;">!</span>
-                </p>
-                <p class="text-white fw-semibold fs-3 mb-0">
-                    Here is my story
-                </p>
-                <p class="fs-5" style="color: lightgrey;">
-                    My full name is Nuky Yasuar Zamzamy but you can call me Nuky. Im currently a 5th student in Bina Nusantara University and i take computer science major. Since highschool i do a lot of design espescially Graphic Design, trying new thing, and try to be more creative on every design. As times goes i know a thing that called UI/UX Designer, and i got interest. Trying something new and learn how to make good UI/UX from people site as reference, i also got the curriculum about it in colledge. Fronted dev is something that are really related to UI/UX design. Because of that i decide to be UI/UX Designer and Frontend Dev. <br> <br>
-                    Other than that i've interest in camera, photography and videography. Sometimes i do hunting and travelling for photo, capture anything i found and set the good angle of it. At one moment, friend of mine that have a Live Streaming company called "Reddot Live Streaming" invite me to be the freelancer. So i accept it. Its been 2 years now, since 2021.
-                </p>
-                <div id="logocontact" class="mt-4">
-                    <a href="https://line.me/ti/p/VELb6ZUMuV"><img src="Assets/line.svg" alt=""></a>
-                    <a href="https://wa.me/+6285156131272"><img src="Assets/whatsapp.svg" alt=""></a>
-                    <a href="https://www.instagram.com/nukyyasuar/"><img src="Assets/instagram.svg" alt=""></a>
-                    <a href="https://github.com/nukyyasuar"><img src="Assets/github.svg" alt=""></a>
-                    <a href="https://www.linkedin.com/in/nukyyasuarzamzamy/"><img src="Assets/linkedin.svg" alt=""></a>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
     
     <!-- Content CV -->
-    <div class="text-center">
+    <!-- <div class="text-center">
         <p id="scrollspycv" class="text-white opacity-0">scrollspy</p>
     </div>
     <div id="" class="mx-4 mt-4" style="margin-bottom: 100px">
         <div>
             <p class="text-center text-white fw-bold mt-4" style="font-size: 40px;">
-                <span style="color: #5C9CF6;">//</span>
-                CURRICULUM VITAE 
+                <span style="color: #5C9CF6;">//</span>CURRICULUM VITAE 
             </p>
-            <div class="">
-                <embed src="Assets/nuky_cv.pdf" type="application/pdf" width="1450px" height="550px" class="rounded-4" style="box-shadow: 0px 0px 60px -25px #5C9CF6;"/>
+            <div class="d-flex justify-content-center">
+                <embed src="Assets/nuky_cv.pdf" type="application/pdf" width="1000px" height="550px" class="rounded-4"/>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Content Project -->
     <div class="text-center">
@@ -217,52 +207,232 @@
     <div class="mt-5" style="margin-bottom: 100px;">
         <div>
             <p class="text-center text-white fw-bold mt-4" style="font-size: 40px;">
-                <span style="color: #5C9CF6;">//</span>
-                PROJECT PORTOFOLIO 
+                <span style="color: #5C9CF6;">//</span>PROJECT PORTOFOLIO
+                <a href="Assets/Nuky Yasuar Zamzamy_Portofolio_Encrichment.pdf" class="btn btn-outline-light ms-2" style="margin-top: -10px;">PDF</a>
             </p>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col d-flex justify-content-center">
-                    <div class="card" style="width: 18rem;">
-                        <img src="Assets/beriBerkah_thumbnail3.jpg" class="card-img-top" alt="...">
+                    <div class="card text-white me-3 border-0" style="width: 18rem; background-color: #1A1A1A;">
+                        <img src="Assets/beriBerkah_thumbnail3.jpg" class="card-img-top rounded-3" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Beri Berkah</h5>
-                          <p class="card-text">A website that aims to provide a platform for donors who want to give their goods to those in need through collaborating foundation.</p>
-                          <a href="Project/Code Fix/Second Attempt/Landing Page.html" class="btn btn-outline-dark">Website Link</a>
+                          <p class="card-text" style="height: 130px;">A website that aims to provide a platform for donors who want to give their goods to those in need through collaborating foundation.</p>
+                          <p>Binus - Project 4th Semester</p>
+                          <a href="Project/Code Fix/Second Attempt/Landing Page.html" class="btn btn-outline-light">Website Link</a>
+                          <a href="#" class="btn btn-outline-light">Figma Link</a>
                         </div>
                       </div>
                 </div>
                 <div class="col d-flex justify-content-center">
-                    <div class="card" style="width: 18rem;">
-                        <img src="Assets/roar_thumbnail2.jpg" class="card-img-top" alt="...">
+                    <div class="card text-white me-3 border-0" style="width: 18rem; background-color: #1A1A1A;">
+                        <img src="Assets/roar_thumbnail2.jpg" class="card-img-top rounded-3" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Roar</h5>
-                          <p class="card-text">A mobile app with the category of children's quiz that aims to educate about basic knowledge in a gamified manner with the entire design concept is following children's preferences.</p>
-                          <a href="https://figmashort.link/6DdQib" class="btn btn-outline-dark">Figma Link</a>
+                          <p class="card-text" style="height: 130px;">A mobile app children's quiz and flashcards that aims to educate about basic knowledge in a gamified manner.</p>
+                          <p>Binus - Project 4th Semester</p>
+                          <a href="https://figmashort.link/6DdQib" class="btn btn-outline-light">Figma Link</a>
                         </div>
                       </div>
                 </div>
                 <div class="col d-flex justify-content-center">
-                    <div class="card" style="width: 18rem;">
-                        <img src="Assets/gadai_thumbnail.jpg" class="card-img-top" alt="...">
+                    <div class="card text-white me-3 border-0" style="width: 18rem; background-color: #1A1A1A;">
+                        <img src="Assets/gadai_thumbnail.jpg" class="card-img-top rounded-3" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Gadai Bersama</h5>
-                          <p class="card-text">A mobile app thats like an e-commerce but for pawn places,s o that the service of pawning an item can be done online.</p>
-                          <a href="https://figmashort.link/yy3nA7" class="btn btn-outline-dark">Figma Link</a>
+                          <p class="card-text" style="height: 130px;">A mobile app thats like an e-commerce but for pawn places,s o that the service of pawning an item can be done online.</p>
+                          <p>Gemastik - Binus Competition</p>
+                          <a href="https://figmashort.link/yy3nA7" class="btn btn-outline-light">Figma Link</a>
                         </div>
                       </div>
                 </div>
                 <div class="col d-flex justify-content-center">
-                    <div class="card" style="width: 18rem;">
-                        <img src="Assets/mandalikuy_thumbnail.jpg" class="card-img-top" alt="...">
+                    <div class="card text-white me-3 border-0" style="width: 18rem; background-color: #1A1A1A;">
+                        <img src="Assets/mandalikuy_thumbnail.jpg" class="card-img-top rounded-3" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Mandalikuy!</h5>
-                          <p class="card-text">A website where users can book flight tickets to Mandalika as well as car rental, also users can see information related to tourist destinations in Mandalika.</p>
-                          <a href="https://figmashort.link/M26y5G" class="btn btn-outline-dark">Figma Link</a>
+                          <p class="card-text" style="height: 130px;">A website where users can book flight tickets to Mandalika as well as car rental, also users can see information related to tourist destinations in Mandalika.</p>
+                          <p>Binus - Project 2nd Semester</p>
+                          <a href="https://figmashort.link/M26y5G" class="btn btn-outline-light">Figma Link</a>
                         </div>
                       </div>
                 </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col d-flex justify-content-center">
+                    <div class="card text-white me-3 border-0" style="width: 18rem; background-color: #1A1A1A; ">
+                        <img src="Assets/dcompare_thumbnail.jpg" class="card-img-top rounded-3" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">D'Compare</h5>
+                          <p class="card-text" style="height: 145px;">A website that aims to provide detailed comparison of specifications between handphones to make it easier for users to determine what they want.</p>
+                          <p>Binus - Project 4th Semester</p>
+                          <a href="#" class="btn btn-outline-light">Website Link</a>
+                          <a href="#" class="btn btn-outline-light">Figma Link</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="card text-white me-3 border-0" style="width: 18rem; background-color: #1A1A1A; ">
+                        <img src="Assets/panenaja_thumbnail.jpg" class="card-img-top rounded-3" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Panen Aja</h5>
+                          <p class="card-text" style="height: 145px;">A mobile application that aims to help farmers manage their farmlands that includes monitoring, predicting, and giving solutions.</p>
+                          <p>Binus - Project 3rd Semester</p>
+                          <a href="https://figmashort.link/eJ6Eyd" class="btn btn-outline-light">Figma Link</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="card text-white me-3 border-0" style="width: 18rem; background-color: #1A1A1A; ">
+                        <img src="Assets/vorskins_thumbnail.jpg" class="card-img-top rounded-3" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Vorskins</h5>
+                          <p class="card-text" style="height: 145px;">A website application where users can buy beauty products branded "Vorskins" and see detailed product information.</p>
+                          <p>Binus - Project 2nd Semester</p>
+                          <a href="Project/projek hci final/homepage.html" class="btn btn-outline-light">Website Link</a>
+                          <a href="https://figmashort.link/h437CN" class="btn btn-outline-light">Figma Link</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="card text-white me-3 border-0" style="width: 18rem; background-color: #1A1A1A; ">
+                        <img src="Assets/helir_thumbnail.jpg" class="card-img-top rounded-3" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Helir!</h5>
+                          <p class="card-text" style="height: 145px;">A mobile application that aims to help users save electricity and water by providing usage information (include cost), and limit setting</p>
+                          <p>Binus - Project 2nd Semester</p>
+                          <a href="https://figmashort.link/Qzyyxa" class="btn btn-outline-light">Figma Link</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Skills -->
+    <div class="text-center">
+        <p id="scrollspyskill" class="text-white opacity-0">scrollspy</p>
+    </div>
+    <div class="mt-5" style="margin-bottom: 300px;">
+        <div>
+            <p class="text-center text-white fw-bold mt-4" style="font-size: 40px;">
+                <span style="color: #5C9CF6;">//</span>SKILLS 
+            </p>
+        </div>
+        <div class="container" style="width: 60%;">
+            <div class="row row-cols-lg-4 g-2 g-lg-4">
+                <div class="col">
+                    <div class="position-absolute z-0">
+                        <div class="rounded-4 justify-content-center d-flex" style="background-color: #333333; width: 200px; height: 200px;">
+                            <img src="Assets/html_icon.svg" alt="" style="width: 65%;">
+                        </div>
+                    </div>
+                    <div class="skill-hov position-absolute z-1 opacity-0">
+                        <div class="bg-black rounded-4 d-flex justify-content-center align-items-center" style="width: 200px;height: 200px;">
+                            <p class="text-white h3">HTML</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="position-absolute z-0">
+                        <div class="rounded-4 justify-content-center d-flex" style="background-color: #333333; width: 200px; height: 200px;">
+                            <img src="Assets/css_icon.svg" alt="" style="width: 65%;">
+                        </div>
+                    </div>
+                    <div class="skill-hov position-absolute z-1 opacity-0">
+                        <div class="bg-black rounded-4 d-flex justify-content-center align-items-center" style="width: 200px;height: 200px;">
+                            <p class="text-white h3">CSS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="position-absolute z-0">
+                        <div class="rounded-4 justify-content-center d-flex" style="background-color: #333333; width: 200px; height: 200px;">
+                            <img src="Assets/github_icon.svg" alt="" style="width: 75%;">
+                        </div>
+                    </div>
+                    <div class="skill-hov position-absolute z-1 opacity-0">
+                        <div class="bg-black rounded-4 d-flex justify-content-center align-items-center" style="width: 200px;height: 200px;">
+                            <p class="text-white h3">GitHub</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="position-absolute z-0">
+                        <div class="rounded-4 justify-content-center d-flex" style="background-color: #333333; width: 200px; height: 200px;">
+                            <img src="Assets/figma_icon.svg" alt="" style="width: 45%;">
+                        </div>
+                    </div>
+                    <div class="skill-hov position-absolute z-1 opacity-0">
+                        <div class="bg-black rounded-4 d-flex justify-content-center align-items-center" style="width: 200px;height: 200px;">
+                            <p class="text-white h3">Figma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 25%;">
+                <div class="col">
+                    <div class="position-absolute z-0">
+                        <div class="rounded-4 justify-content-center d-flex" style="background-color: #333333; width: 200px; height: 200px;">
+                            <img src="Assets/ai_icon.svg" alt="" style="width: 70%;">
+                        </div>
+                    </div>
+                    <div class="skill-hov position-absolute z-1 opacity-0">
+                        <div class="bg-black rounded-4 d-flex justify-content-center align-items-center" style="width: 200px;height: 200px;">
+                            <p class="text-white h3 text-center">Adobe <br> Illustrator</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="position-absolute z-0">
+                        <div class="rounded-4 justify-content-center d-flex" style="background-color: #333333; width: 200px; height: 200px;">
+                            <img src="Assets/ps_icon.svg" alt="" style="width: 70%;">
+                        </div>
+                    </div>
+                    <div class="skill-hov position-absolute z-1 opacity-0">
+                        <div class="bg-black rounded-4 d-flex justify-content-center align-items-center" style="width: 200px;height: 200px;">
+                            <p class="text-white h3 text-center">Adobe <br> Photoshop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="position-absolute z-0">
+                        <div class="rounded-4 justify-content-center d-flex" style="background-color: #333333; width: 200px; height: 200px;">
+                            <img src="Assets/lr_icon.svg" alt="" style="width: 70%;">
+                        </div>
+                    </div>
+                    <div class="skill-hov position-absolute z-1 opacity-0">
+                        <div class="bg-black rounded-4 d-flex justify-content-center align-items-center" style="width: 200px;height: 200px;">
+                            <p class="text-white h3 text-center">Adobe <br> Lightroom</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="position-absolute z-0">
+                        <div class="rounded-4 justify-content-center d-flex" style="background-color: #333333; width: 200px; height: 200px;">
+                            <img src="Assets/premiere_icon.svg" alt="" style="width: 70%;">
+                        </div>
+                    </div>
+                    <div class="skill-hov position-absolute z-1 opacity-0">
+                        <div class="bg-black rounded-4 d-flex justify-content-center align-items-center" style="width: 200px;height: 200px;">
+                            <p class="text-white h3 text-center">Adobe <br> Premiere Pro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div>
+        <div class="text-center py-4">
+            <div id="logocontact" class="mt-4">
+                <a href="https://line.me/ti/p/VELb6ZUMuV"><img src="Assets/line.svg" alt=""></a>
+                <a href="https://wa.me/+6285156131272"><img src="Assets/whatsapp.svg" alt=""></a>
+                <a href="https://www.instagram.com/nukyyasuar/"><img src="Assets/instagram.svg" alt=""></a>
+                <a href="https://github.com/nukyyasuar"><img src="Assets/github.svg" alt=""></a>
+                <a href="https://www.linkedin.com/in/nukyyasuarzamzamy/"><img src="Assets/linkedin.svg" alt=""></a>
             </div>
         </div>
     </div>
