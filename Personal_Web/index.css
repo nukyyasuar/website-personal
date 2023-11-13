@@ -1,6 +1,19 @@
-#navbar a{
+/* Body */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1A1A1A;
+}
+
+/* Navbar */
+.navbar a{
     color: white;
 }
+.navbar-brand:hover{
+    color: #5C9CF6;
+}
+
+/* Particle */
 .background{
     position: absolute;
     display: block;
@@ -8,8 +21,17 @@
     left: 0px;
     z-index: -1;
     opacity: 40%;
-    overflow-y: scroll;
 }
+
+/* Skill */
+.skill-hov{
+    transition: all .4s ease;
+}
+.col .skill-hov:hover{
+    opacity: 75% !important;
+}
+
+/* Footer */
 #logocontact img{
     margin-right: 20px;
     width: 40px;
@@ -18,14 +40,15 @@
     filter: brightness(200%) contrast(200%);
 }
 
-.skill-hov{
-    transition: all .4s ease;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
 }
-.col .skill-hov:hover{
-    opacity: 75% !important;
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
 }
-
-#cv-hover a:hover{
-    background-color: white;
-    color: black;
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px white; 
 }
