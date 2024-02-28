@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuky Yasuar Zamzamy</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" type="module" defer></script>
+
+    <!-- Link -->
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="bg-dark2">
+    <div class="scroller">
+        <section class="hv-center container-fluid">
+            <div class="text-center d-grid">
+                <h1 class="fw-normal text-white m-0">I'm Nuky Yasuar Zamzamy</h1>
+                <h1 class="fw-bolder fw-bolder text-orange">a Web Developer</h1>
+                <div class="hv-center my-3">
+                    <hr class="divider m-0">
+                </div>
+                <div class="container-fluid col-8 col-lg-12">
+                    <h4 class="fw-normal text-white text-center">I also create UI/UX design and have interest in video and photography </h4>
+                </div>
+            </div>
+            <div class="text-center position-relative bounce" style="top: 70px;">
+                <small class="fw-normal text-white">scroll down</small>
+                <br>
+                <img src="./Assets/arrow-down.png" alt="" class="brightness" width="15px">
+            </div>
+        </section>
+        <section>
+            <div class="container px-0">
+                <div> 
+                    <nav class="v-center me-0">
+                        <div id="carouselIndicator" class="carousel carousel-fade d-flex gap-navContent">
+                            <div id="indicator" class="d-flex flex-column gap-4 v-center container-fluid col-2 col-md-3 col-lg-2">
+                                <a href="#" class="mb-5">
+                                    <img src="./Assets/brand.png" alt="" class="nav-brand">
+                                </a>
+                                <button type="button" data-bs-target="#carouselIndicator" data-bs-slide-to="0" class="d-flex align-items-center active p-2 hover-opcUp" style="border: none;" onclick="activeButton(0)">
+                                    <img src="./Assets/about.png" alt="" class="nav-icon me-3">
+                                    <span class="text-white remove-text">About</span>
+                                </button>
+                                <button type="button" data-bs-target="#carouselIndicator" data-bs-slide-to="1" class="d-flex align-items-center p-2 inactive hover-opcUp" style="border: none;" onclick="activeButton(1)">
+                                    <img src="./Assets/edu.png" alt="" class="nav-icon me-3">
+                                    <span class="text-white remove-text">Education</span>
+                                </button>
+                                <button type="button" data-bs-target="#carouselIndicator" data-bs-slide-to="2" class="d-flex align-items-center p-2 inactive hover-opcUp" style="border: none;" onclick="activeButton(2)">
+                                    <img src="./Assets/exp.png" alt="" class="nav-icon me-3">
+                                    <span class="text-white remove-text">Experience</span>
+                                </button>
+                                <button type="button" data-bs-target="#carouselIndicator" data-bs-slide-to="3" class="d-flex align-items-center p-2 inactive hover-opcUp" style="border: none;" onclick="activeButton(3)">
+                                    <img src="./Assets/skill.png" alt="" class="nav-icon me-3">
+                                    <span class="text-white remove-text">Skill</span>
+                                </button>
+                                <button type="button" data-bs-target="#carouselIndicator" data-bs-slide-to="4" class="d-flex align-items-center p-2 inactive hover-opcUp" style="border: none;" onclick="activeButton(4)">
+                                    <img src="./Assets/project.png" alt="" class="nav-icon me-3">
+                                    <span class="text-white remove-text">Project</span>
+                                </button>
+                                <div class="d-flex gap-4 mt-5 sosmed">
+                                    <a href="https://wa.me/+6285156131272">
+                                        <img src="./Assets/wa.png" alt="" class="sosmed-icon hover-scale">
+                                    </a>
+                                    <a href="https://www.instagram.com/nukyyasuar/" class="hover-scale">
+                                        <img src="./Assets/ig.png" alt="" class="sosmed-icon">
+                                    </a>
+                                    <a href="https://github.com/nukyyasuar" class="hover-scale">
+                                        <img src="./Assets/github.png" alt="" class="sosmed-icon">
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/nukyyasuarzamzamy/" class="hover-scale">
+                                        <img src="./Assets/linked.png" alt="" class="sosmed-icon">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-inner d-flex align-items-center">
+                                <div class="carousel-item active">
+                                    <h2 class="fw-bold text-orange mb-3">ABOUT</h2>
+                                    <div class="d-flex slide-right about-content">
+                                        <img src="./Assets/portrait.png" alt="" class="portrait-img me-4 remove-img">
+                                        <div class="text-white about-text col-xl-8">
+                                            <p>Currently, I am an <span class="fw-bold text-orange">undergraduate student at Binus University</span> and am expected to graduate in 2025. Throughout my academic journey, I have developed a keen interest in <span class="fw-bold text-orange">UI/UX design and web development</span>, particularly in the realm of <span class="fw-bold text-orange">Front-end development</span>. I am drawn to these fields due to their demand for <span class="fw-bold text-orange">creativity and the ubiquitous use of websites by almost every business to enhance their operations</span>.</p>
+                                            <p>In addition to my studies, I have been actively involved in <span class="fw-bold text-orange">freelancing</span> for <span class="fw-bold text-orange">Reddot Livestream</span> as a <span class="fw-bold text-orange">camera operator</span>. In this role, my responsibilities include operating the camera to ensure optimal results during live streaming events. I chose to pursue this position because of my genuine passion for <span class="fw-bold text-orange">videography and photography</span>.</p>
+                                            <p>The combination of my academic pursuits and freelance work has provided me with a <span class="fw-bold text-orange">well-rounded skill set</span>, aligning with my aspirations to contribute to the dynamic and ever-evolving fields of UI/UX design and Front-end development. I believe that my <span class="fw-bold text-orange">creative mindset</span>, coupled with my technical skills, will enable me to make valuable contributions to the digital landscape.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <h2 class="fw-bold text-orange mb-3">EDUCATION</h2>
+                                    <div class="d-flex flex-column gap-4 slide-right edu-content">
+                                        <div class="edu-item">
+                                            <div class="d-flex edu-place">
+                                                <h3 class="text-white fw-normal">Binus University | Undergraduate</h3>
+                                                <h4 class="fw-normal text-white text-nowrap">2021 - Present</h4>
+                                            </div>
+                                            <h4 class="text-white fw-normal">Computer Science</h4>
+                                        </div>
+                                        <div class="edu-item">
+                                            <div class="d-flex edu-place">
+                                                <h3 class="text-white fw-normal">UIN Jakarta | Undergraduate</h3>
+                                                <h4 class="fw-normal text-white text-nowrap">2019 - 2021</h4>
+                                            </div>
+                                            <h4 class="text-white fw-normal">Medicine</h4>
+                                        </div>
+                                        <div class="edu-item">
+                                            <div class="d-flex edu-place">
+                                                <h3 class="text-white fw-normal">MAN 4 Jakarta | Diploma</h3>
+                                                <h4 class="fw-normal text-white text-nowrap">2016 - 2019</h4>
+                                            </div>
+                                            <h4 class="text-white fw-normal">Natural Science</h4>
+                                        </div>
+                                        <div class="edu-item">
+                                            <div class="d-flex edu-place">
+                                                <h3 class="text-white fw-normal">SMP Insan Cendekia Madani</h3>
+                                                <h4 class="fw-normal text-white text-nowrap">2013 - 2016</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <h2 class="fw-bold text-orange mb-3">EXPERIENCE</h2>
+                                    <div class="slide-right exp-content overflow-y-scroll overflow-x-hidden pe-3">
+                                        <div class="work-item mb-2">
+                                            <h3 class="fw-bold text-blue">Work Experience</h3>
+                                            <div class="d-flex exp-text">
+                                                <h4 class="text-white fw-bold d-flex">Camera Operator - Reddot Livestream</h4>
+                                                <h4 class="text-grayBlue text-nowrap">2021 - Present</h4>
+                                            </div>
+                                            <p class="text-white">Operating the camera to capture angles and settings that are suitable for live streaming an event.</p>
+                                        </div>
+                                        <div class="">
+                                            <h3 class="fw-bold text-blue">Organization Experience</h3>
+                                            <div class="org-item">
+                                                <div class="d-flex exp-text">
+                                                    <h4 class="text-white fw-bold">Audiovisual Design Division Coordinator - Relawan COVID 19 Nasional</h4>
+                                                    <h4 class="text-grayBlue text-nowrap">2021 - 2022</h4>
+                                                </div>
+                                                <p class="text-white mb-4">Creating Instagram feed designs related to COVID-19 information, ensuring that the designs align with the specified format as provided by division members, monitoring the performance of team members, and regularly providing reports to the RECON Chair.</p>
+                                            </div>
+                                            <div class="org-item">
+                                                <div class="d-flex exp-text">
+                                                    <h4 class="text-white fw-bold">Contact Tracer - Relawan COVID 19 Nasional</h4>
+                                                    <h4 class="text-grayBlue text-nowrap">2021</h4>
+                                                </div>
+                                                <p class="text-white mb-4">Conducting the process of identification, evaluation, and management of a group of individuals who have been exposed to COVID-19.</p>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-white fw-bold">ICT Department Staff</h4>
+                                                <div class="org-item">
+                                                    <div class="d-flex exp-text">
+                                                        <h4 class="text-white fw-bold">- National ISMKI</h4>
+                                                        <h4 class="text-grayBlue text-nowrap">2021 - 2022</h4>
+                                                    </div>
+                                                    <div class="d-flex exp-text">
+                                                        <h4 class="text-white fw-bold">- DEMA FK UIN Jakarta</h4>
+                                                        <h4 class="text-grayBlue text-nowrap">2020 - 2022</h4>
+                                                    </div>
+                                                    <div class="d-flex exp-text">
+                                                        <h4 class="text-white fw-bold">- Regio 2 ISMKI</h4>
+                                                        <h4 class="text-grayBlue text-nowrap">2020 - 2021</h4>
+                                                    </div>
+                                                    <p class="text-white">Creating content designs such as Instagram feeds, PowerPoint presentations, and other materials according to the design requests from other departments.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="skills" class="carousel-item">
+                                    <h2 class="fw-bold text-orange mb-3">SKILLS</h2>
+                                    <div class="container-fluid overflow-y-scroll">
+                                        <div class="row row-cols-2 row-cols-xxl-5 row-cols-xl-4 row-cols-lg-3 g-1">
+                                            <div class="col col-md-4 col-lg-3 col-xl-3 g-2 d-flex flex-column justify-content-center align-items-center">
+                                                <img src="./Assets/figma.png" alt="" class="skill-img flip mb-1">
+                                                <h4 class="text-white fw-normal text-center skill-text flip">Figma</h4>
+                                            </div>
+                                            <div class="col col-md-4 col-lg-3 col-xl-3 g-2 d-flex flex-column justify-content-center align-items-center">
+                                                <img src="./Assets/html.png" alt="" class="skill-img flip mb-1">
+                                                <h4 class="text-white fw-normal text-center skill-text flip">HTML 5</h4>
+                                            </div>
+                                            <div class="col col-md-4 col-lg-3 col-xl-3 g-2 d-flex flex-column justify-content-center align-items-center">
+                                                <img src="./Assets/css.png" alt="" class="skill-img flip mb-1">
+                                                <h4 class="text-white fw-normal text-center skill-text flip">CSS 3</h4>
+                                            </div>
+                                            <div class="col col-md-4 col-lg-3 col-xl-3 g-2 d-flex flex-column justify-content-center align-items-center">
+                                                <img src="./Assets/javascript.png" alt="" class="skill-img flip mb-1">
+                                                <h4 class="text-white fw-normal text-center skill-text flip">JavaScript</h4>
+                                            </div>
+                                            <div class="col col-md-4 col-lg-3 col-xl-3 g-2 d-flex flex-column justify-content-center align-items-center">
+                                                <img src="./Assets/bootstrap.png" alt="" class="skill-img flip mb-1">
+                                                <h4 class="text-white fw-normal text-center skill-text flip">Bootstrap</h4>
+                                            </div>
+                                            <div class="col col-md-4 col-lg-3 col-xl-3 g-2 d-flex flex-column justify-content-center align-items-center">
+                                                <img src="./Assets/premiere.png" alt="" class="skill-img flip mb-1">
+                                                <h4 class="text-white fw-normal text-center skill-text flip">Premiere Pro</h4>
+                                            </div>
+                                            <div class="col col-md-4 col-lg-3 col-xl-3 g-2 d-flex flex-column justify-content-center align-items-center">
+                                                <img src="./Assets/photoshop.png" alt="" class="skill-img flip mb-1">
+                                                <h4 class="text-white fw-normal text-center skill-text flip">Photoshop</h4>
+                                            </div>
+                                            <div class="col col-md-4 col-lg-3 col-xl-3 g-2 d-flex flex-column justify-content-center align-items-center">
+                                                <img src="./Assets/illustrator.png" alt="" class="skill-img flip mb-1">
+                                                <h4 class="text-white fw-normal text-center skill-text flip" style="width: 160px;">Illustrator</h4>
+                                            </div>
+                                            <div class="col col-md-4 col-lg-3 col-xl-3 g-2 d-flex flex-column justify-content-center align-items-center">
+                                                <img src="./Assets/lightroom.png" alt="" class="skill-img flip mb-1">
+                                                <h4 class="text-white fw-normal text-center skill-text flip" style="width: 160px;">Lightroom</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div id="carouselIndicator2" class="carousel carousel-fade">
+                                        <div id="indicator2" class="d-flex flex-column flex-xl-row align-items-xl-center mb-3">
+                                            <h2 class="m-0 text-orange fw-bold me-5">PROJECTS</h2>
+                                            <div class="d-flex">
+                                                <button class="projects-btn me-3 active" type="button" data-bs-target="#carouselIndicator2" data-bs-slide-to="0" onclick="activeButton2(0)">Website</button>
+                                                <button class="projects-btn text-nowrap" type="button" data-bs-target="#carouselIndicator2" data-bs-slide-to="1" onclick="activeButton2(1)">Mobile App</button>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-inner overflow-y-scroll h-70">
+                                            <div class="carousel-item active">
+                                                <div class="row row-cols-auto row-cols-md-1 row-cols-lg-2 row-cols-xl-3 g-4">
+                                                    <div class="col">
+                                                        <div class="card p-1 project-card">
+                                                            <img src="./Assets/quizzle.png" class="projectWeb-img" alt="...">
+                                                            <div class="card-body">
+                                                                <a href="#" class="project-link">
+                                                                    <h3 class="text-white fw-bold m-0 me-2">Quizzle</h3>
+                                                                    <img src="./Assets/link.png" alt="" class="link-icon">
+                                                                </a>
+                                                                <p class="text-white fw-normal mb-0 mt-2">A website that provides quizzes about animals, vehicles, and professions for children aged 3-5 to make learning enjoyable and engaging.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="card p-1 project-card">
+                                                            <img src="./Assets/pawsitter.png" class="projectWeb-img" alt="...">
+                                                            <div class="card-body">
+                                                                <a href="#" class="project-link">
+                                                                    <h3 class="text-white fw-bold m-0 me-2">PawSitter</h3>
+                                                                    <img src="./Assets/link.png" alt="" class="link-icon">
+                                                                </a>
+                                                                <p class="text-white fw-normal mb-0 mt-2">A website to provide spesification comparison between handphones to make it easier for users to determine what they want.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="card p-1 project-card">
+                                                            <img src="./Assets/beri-barang.png" class="projectWeb-img" alt="...">
+                                                            <div class="card-body">
+                                                                <a href="#" class="project-link">
+                                                                    <h3 class="text-white fw-bold m-0 me-2">Beri Barang</h3>
+                                                                    <img src="./Assets/link.png" alt="" class="link-icon">
+                                                                </a>
+                                                                <p class="text-white fw-normal mb-0 mt-2">A website that aims to provide a platform for donors who want to give their goods to those in need through collaborating foundation.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="card p-1 project-card">
+                                                            <img src="./Assets/dcompare.png" class="projectWeb-img" alt="...">
+                                                            <div class="card-body">
+                                                                <a href="#" class="project-link">
+                                                                    <h3 class="text-white fw-bold m-0 me-2">D'Compare</h3>
+                                                                    <img src="./Assets/link.png" alt="" class="link-icon">
+                                                                </a>
+                                                                <p class="text-white fw-normal mb-0 mt-2">A website to provide spesification comparison between handphones to make it easier for users to determine what they want.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="card p-1 project-card">
+                                                            <img src="./Assets/mandalikuy.png" class="projectWeb-img" alt="...">
+                                                            <div class="card-body">
+                                                                <a href="#" class="project-link">
+                                                                    <h3 class="text-white fw-bold m-0 me-2">Mandalikuy!</h3>
+                                                                    <img src="./Assets/link.png" alt="" class="link-icon">
+                                                                </a>
+                                                                <p class="text-white fw-normal mb-0 mt-2">A website where users can book flight tickets to Mandalika and car rental, also users can see information related to tourist destinations in Mandalika.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="card p-1 project-card">
+                                                            <img src="./Assets/vorskins.png" class="projectWeb-img" alt="...">
+                                                            <div class="card-body">
+                                                                <a href="#" class="project-link">
+                                                                    <h3 class="text-white fw-bold m-0 me-2">Vorskins</h3>
+                                                                    <img src="./Assets/link.png" alt="" class="link-icon">
+                                                                </a>
+                                                                <p class="text-white fw-normal mb-0 mt-2">A website application where users can buy beauty products branded "Vorskins" and see detailed product information.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row row-cols-1 row-cols-lg-2 row-cols-xxl-3 g-4">
+                                                    <div class="col">
+                                                        <div class="d-flex projectApp-card">
+                                                            <div class="d-flex justify-content-center me-3">
+                                                                <img src="./Assets/roar.png" class="projectApp-img" alt="...">
+                                                            </div>
+                                                            <div class="d-flex flex-column justify-content-center">
+                                                                <a href="#" class="project-link">
+                                                                    <h3 class="text-white fw-bold m-0 me-2">Roar</h3>
+                                                                    <img src="./Assets/link.png" alt="" class="link-icon">
+                                                                </a>
+                                                                <p class="text-white fw-normal mb-0 mt-2">A website that provides quizzes about animals, vehicles, and professions for children aged 3-5 to make learning enjoyable and engaging.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="d-flex projectApp-card">
+                                                            <div class="d-flex justify-content-center me-3">
+                                                                <img src="./Assets/roar.png" class="projectApp-img" alt="...">
+                                                            </div>
+                                                            <div class="d-flex flex-column justify-content-center">
+                                                                <a href="#" class="project-link">
+                                                                    <h3 class="text-white fw-bold m-0 me-2">Gadai Bersama</h3>
+                                                                    <img src="./Assets/link.png" alt="" class="link-icon">
+                                                                </a>
+                                                                <p class="text-white fw-normal mb-0 mt-2">A mobile app thats like an e-commerce but for pawn places,s o that the service of pawning an item can be done online.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="d-flex projectApp-card">
+                                                            <div class="d-flex justify-content-center me-3">
+                                                                <img src="./Assets/roar.png" class="projectApp-img" alt="...">
+                                                            </div>
+                                                            <div class="d-flex flex-column justify-content-center">
+                                                                <a href="#" class="project-link">
+                                                                    <h3 class="text-white fw-bold m-0 me-2">Helir</h3>
+                                                                    <img src="./Assets/link.png" alt="" class="link-icon">
+                                                                </a>
+                                                                <p class="text-white fw-normal mb-0 mt-2">A mobile application that aims to help users save electricity and water by providing usage information (include cost), and limit setting.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="d-flex projectApp-card">
+                                                            <div class="d-flex justify-content-center me-3">
+                                                                <img src="./Assets/roar.png" class="projectApp-img" alt="...">
+                                                            </div>
+                                                            <div class="d-flex flex-column justify-content-center">
+                                                                <a href="#" class="project-link">
+                                                                    <h3 class="text-white fw-bold m-0 me-2">Panen Aja</h3>
+                                                                    <img src="./Assets/link.png" alt="" class="link-icon">
+                                                                </a>
+                                                                <p class="text-white fw-normal mb-0 mt-2">A mobile application that aims to help farmers manage their farmlands that includes monitoring, predicting, and giving solutions.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
